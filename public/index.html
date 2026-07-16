@@ -12,17 +12,7 @@
     <p id="description">Please enter registration information for the alumni meet. You may fill one form per group.</p>
 
     <form name="registrationForm">
-        <label for="groupSize">Group size:</label>
-        <input id="groupSize"
-            type="text" 
-            inputmode="numeric" 
-            pattern="\d{1,2}" 
-            name="groupSize" 
-            size="4"
-            required>
-        <br>
-
-        <h4>Person 1</h4>
+        <h4 id="firstFormElement">Person 1</h4>
 
         <label for="firstName1">First name:</label>
         <input type="text" name="firstName1" required>
@@ -89,6 +79,9 @@
         <br>
 
         <div id="additionalPersonalInfo"></div>
+
+        <label id="addPersonLabel">Add another person:</label>
+        <button id="plus">+</button>
         
         <h4>Payment:</h4>
         <input type="radio" id="paypal" name="payment" value="paypal" required>

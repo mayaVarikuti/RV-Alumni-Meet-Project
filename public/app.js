@@ -5,8 +5,10 @@
  * - HTML, CSS, JS Docs from Mozilla: https://developer.mozilla.org/en-US/
  */
 
+// Keeps track of the number of people
+var i = 1;
 // Event Listeners:
-document.registrationForm.groupSize.addEventListener("keyup", addMorePeople);
+document.getElementById("plus").addEventListener('click', addMorePeople);
 document.getElementById("paypal").addEventListener("change", paymentSelection);
 document.getElementById("qr").addEventListener("change", paymentSelection);
 document.registrationForm.addEventListener("submit", function(e) {
@@ -35,14 +37,11 @@ document.registrationForm.addEventListener("submit", function(e) {
  * Function that adds more personal info slots when the group size input changes.
  */
 function addMorePeople() {
-    // get the inputted group size
-    var groupSize = document.registrationForm.groupSize.value;
+    // Increment the number of people
+    i++;
 
     // for every additional person, add a new block for personal info
-    var text = "";
-    for(var i = 2; i <= groupSize; i++) {
-        text += `<h4>Person ${i}</h4>
-
+    var text = `<h4>Person ${i}</h4>
         <label for="firstName${i}">First name:</label>
         <input type="text" name="firstName${i}" required>
         <br>
@@ -107,10 +106,8 @@ function addMorePeople() {
         <label for="large${i}">Large</label>
         <br>`;
 
-    }
-    
     // add the blocks to html page
-    document.querySelector("#additionalPersonalInfo").innerHTML = text;
+    document.querySelector("#additionalPersonalInfo").innerHTML += text;
 
 }
 

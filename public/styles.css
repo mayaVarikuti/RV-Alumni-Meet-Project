@@ -56,3 +56,16 @@ form {
     margin-bottom: 0;
     font-size: 16px;
 }
+
+#plus {
+    margin-top: 20px;
+}
+
+#addPersonLabel {
+    font-size: 16px;
+    font-style: italic;
+}
+
+#firstFormElement {
+    margin-top: 3px;
+}
