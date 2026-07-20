@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/Lato-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: "lato";
+    font-size: 18px;
+    padding-left: 30px;
+    padding-top: 15px;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+.formLabel {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+#submitButton {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+}  
+
+form {
+    background-color: white;
+    padding: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+#confirmationRequest {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+#plus {
+    margin-top: 20px;
+}
+
+#addPersonLabel {
+    font-size: 16px;
+    font-style: italic;
+}
+
+#firstFormElement {
+    margin-top: 3px;
+}
